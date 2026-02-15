@@ -1,0 +1,43 @@
+{
+    "name": "botovis/botovis-laravel",
+    "description": "Botovis Smart Layer for Laravel — AI-powered natural language interface for your app",
+    "keywords": ["botovis", "laravel", "ai", "smart-layer", "natural-language", "crud"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "botovis/core": "^0.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Botovis\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Botovis\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Botovis\\Laravel\\BotovisServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
